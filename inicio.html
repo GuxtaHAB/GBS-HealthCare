@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GBSMedConnect - Página Inicial</title>
+  <link rel="stylesheet" href="inicio.css" />
+  <script src="inicio.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>GBSMedConnect</h1>
+    <div class="faixa-promocional">
+      <p class="mensagem">
+        <strong>Agende sua consulta com praticidade!</strong>
+        <span>Especialistas em mais de 10 áreas da saúde.</span><br>
+        <span>Atendimentos com data e hora marcadas.</span>
+      </p>
+    </div>
+  <div class="perfil-usuario" onclick="togglePerfilMenu()">
+    <img src="user.png" alt="Perfil do usuário">
+    <div class="perfil-menu" id="perfilMenu">
+      <ul>
+        <li><a href="minhaConta.html">Minha Conta</a></li>
+        <li><a href="index.html">Sair</a></li>
+      </ul>
+    </div>
+  </div>
+  </header>
+
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#rodape-sobre">Sobre</a></li>
+      <li><a href="#rodape-contato">Contato</a></li>
+      <li>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+      </li>
+    </ul>
+  </div>
+
+  <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+
+  <main>
+    <section class="search-box">
+      <h2>Encontre um médico perto de você</h2>
+      <div class="search-inputs">
+        <input type="text" placeholder="Digite a especialidade" />
+        <input type="text" placeholder="Digite sua localização" />
+      </div>
+    </section>
+
+    <section class="especialidades">
+      <h3>Especialidades Populares</h3>
+      <div class="tags">
+        <button>Clínico Geral</button>
+        <button>Cardiologia</button>
+        <button>Ginecologia</button>
+        <button>Pediatria</button>
+        <button>Dermatologia</button>
+      </div>
+    </section>
+
+    <section class="medicos">
+      <div class="medico-card">
+        <h4>Dr. João Silva</h4>
+        <p>Cardiologista</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="medico-card">
+        <h4>Dra. Ana Costa</h4>
+        <p>Ginecologista</p>
+        <div class="stars">★★★★☆</div>
+      </div>
+      <div class="medico-card">
+        <h4>Dr. Marcos Lima</h4>
+        <p>Dermatologista</p>
+        <div class="stars">★★★★☆</div>
+      </div>
+    </section>
+
+  
+
+    <section class="depoimentos">
+      <h3>O que nossos pacientes dizem</h3>
+      <div class="depoimento-card">
+        <p class="depoimento-texto">"O GBSMedConnect facilitou muito o processo de encontrar um especialista e agendar minha consulta. Excelente plataforma!"</p>
+        <p class="depoimento-autor">Gustavo Gomes - Paciente</p>
+      </div>
+      <div class="depoimento-card">
+        <p class="depoimento-texto">"Muito prático e rápido! Fiquei muito satisfeita com a consulta que agendei com a Dra. Ana. Super recomendo!"</p>
+        <p class="depoimento-autor">Isaac Xavier - Paciente</p>
+      </div>
+      <div class="depoimento-card">
+        <p class="depoimento-texto">"A plataforma é incrível! Muito fácil de usar e com ótimos profissionais. Me senti muito segura." </p>
+        <p class="depoimento-autor">Antonella - Paciente</p>
+      </div>
+    </section>
+    <section class="medico-hover-carousel">
+  <h2>Nossos Médicos</h2>
+  <div class="medico-carrossel">
+    <img src="Medico1.jpg" alt="Médico1" class="frente">
+    <img src="Medico2.jpg" alt="Médico2" class="verso">
+  </div>
+
+  <div class="medico-carrossel">
+    <img src="Medico3.jpg" alt="Médico3" class="frente">
+    <img src="Medico4.jpg" alt="Médico4" class="verso">
+  </div>
+</section>
+  </main>
+
+  <footer class="rodape">
+  <div class="rodape-conteudo">
+    <div class="rodape-sobre" id="rodape-sobre">
+      <h4>Sobre o GBSMedConnect</h4>
+      <p>
+        Plataforma que conecta pacientes a médicos especialistas com agendamento rápido e prático.
+      </p>
+    </div>
+    <div class="rodape-contato" id="rodape-contato">
+      <h4>Contato</h4>
+      <p>Email: suporte@gbsmedconnect.com</p>
+      <p>Telefone: (21) 96429-5327</p>
+      <p>Endereço: Estrada Wenceslau José de Medeiros, 1045 - Prata, Teresópolis - RJ, 25976-345</p>
+    </div>
+  </div>
+  <div class="rodape-copy">
+    <p>&copy; 2025 GBSMedConnect. Todos os direitos reservados.</p>
+  </div>
+</footer>
+</body>
+
+</html>

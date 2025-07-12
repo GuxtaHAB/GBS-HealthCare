@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minha Conta - GBSMedConnect</title>
+  <link rel="stylesheet" href="minhaConta.css" />
+</head>
+<body class>
+  <header class="header">
+  </header>
+
+  <main class="minha-conta">
+    <section class="dados-usuario">
+      <h1>Minha Conta</h1>
+      <h2>Informações do Usuário</h2>
+      <form>
+        <label>Nome:</label>
+        <input type="text" name="nome" value="João da Silva" />
+
+        <label>Email:</label>
+        <input type="email" name="email" value="joao@email.com" />
+
+        <label>Senha:</label>
+        <input type="password" name="senha" value="********" />
+
+        <label>Tipo:</label>
+        <select>
+          <option>Paciente</option>
+          <option>Médico</option>
+        </select>
+
+        <button class = "salvar" type="submit">Salvar Alterações</button>
+      </form>
+      <button class="btn-voltar" onclick="location.href='inicio.html'">← Voltar</button>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-copy">© 2025 GBSMedConnect. Todos os direitos reservados.</div>
+  </footer>
+</body>
+</html>
